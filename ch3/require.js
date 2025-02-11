@@ -1,0 +1,10 @@
+require('./var')
+
+console.log('//// require ////')
+console.log(require)
+console.log('//// require.cache ////')
+console.log(require.cache)
+console.log('//// require.main === module ////')
+console.log(require.main === module)
+console.log('//// require.main.filename ////')
+console.log(require.main.filename)
