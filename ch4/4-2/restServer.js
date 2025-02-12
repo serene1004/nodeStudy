@@ -15,6 +15,10 @@ http.createServer(async (req, res) => {
         const data = await fs.readFile(path.join(__dirname, 'about.html'));
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         return res.end(data);
+      } else if (req.url === '/contact') {  // contact 추가
+        const data = await fs.readFile(path.join(__dirname, 'contact.html'));
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        return res.end(data);
       } else if (req.url === '/users') {
         res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
         return res.end(JSON.stringify(users));
