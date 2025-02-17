@@ -1,0 +1,21 @@
+{
+  "name": "npm_test",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Serene1004",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
